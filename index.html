@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Поиск Хвостатых</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-search">
+            <a href="#">
+                <div class="logo">Искатели <br> Хвостатых</div>
+            </a>
+        </div>
+        <nav>
+            <div class="kabinet-star">
+                <a href="#">Поиск</a>
+                <a href="#">Отзывы</a>
+                <a href="#">Добавить</a>
+            </div>
+            <div class="add-signin">
+                <a href="#">Личный кабинет</a>
+                &ensp;
+                |
+                &ensp;
+                <a href="#">Регистрация</a>
+            </div>
+        </nav>
+    </header>
+    <div class="main-cont">
+
+        <div class="main-info-cont">
+            <img src="/pic/ideal.jpg" alt="---">
+            <div class="main-title">
+                <h1>Помогаем воссоединиться<br> с вашими любимцами</h1>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="item">
+                <a class="previous" onclick="previousSlide()"><ion-icon name="chevron-back-outline"
+                        class="arrow"></ion-icon></a>
+                <div class="item_col">
+                    <div class="title-baner">
+                        <h1>Найден кот</h1>
+                    </div>
+                    <div class="slider-info">
+                        <h2>
+                            <p>Кот был найден на улице, блуждая в поисках еды и уюта.</p>
+                            <p>Он был грязный и измученный, без
+                                опознавательного ошейника.</p>Жители района обратили внимание на него и решили
+                            помочь<br> -
+                            принесли еду, воду и нежно обращались с ним. <br>Кошачий спаситель был вызван,<br> и после
+                            обследования стало ясно, <br>что кот потерялся и нуждается в доме и заботе
+                        </h2>
+                    </div>
+                    <div class="buttonn"><button class="btn">Подробнее</button></div>
+                </div>
+                <img src="/pic/кот1.jpg" alt="">
+                <a class="next" onclick="nextSlide()"><ion-icon name="chevron-forward-outline"
+                        class="arrow"></ion-icon></a>
+            </div>
+
+            <div class="item">
+                <a class="previous" onclick="previousSlide()"><ion-icon name="chevron-back-outline"
+                        class="arrow"></ion-icon></a>
+                <div class="item_col">
+                    <div class="title-baner">
+                        <h1>Найдена собака</h1>
+                    </div>
+                    <div class="slider-info">
+                        <h2>Собака была найдена бродящей без ошейника на окраине города.<br> Прохожие помогли ей и
+                            временно взяли под свою опеку.<br> После тщательного поиска владельца безуспешным оказалось.
+                        </h2>
+                    </div>
+                    <div class="buttonn"><button class="btn">Подробнее</button></div>
+                </div>
+                <img src="/pic/dogi.jpg" alt="">
+                <a class="next" onclick="nextSlide()"><ion-icon name="chevron-forward-outline"
+                        class="arrow"></ion-icon></a>
+            </div>
+
+            <div class="item">
+                <a class="previous" onclick="previousSlide()"><ion-icon name="chevron-back-outline"
+                        class="arrow"></ion-icon></a>
+                <div class="item_col">
+                    <div class="title-baner">
+                        <h1>Найден кот</h1>
+                    </div>
+                    <div class="slider-info">
+                        <h2>Кот был найден маляром, который работал на строительной площадке. <br>Он услышал плачущий
+                            крик и
+                            обнаружил маленького котенка, застрявшего в трубе.<br> Маляр освободил котенка и принял его
+                            под
+                            свою опеку, пока не найдется его новый дом.<br> Котенок оказался здоровым и быстрым, и
+                            вскоре
+                            нашел заботливых владельцев,<br> которые приняли его к себе.</h2>
+                    </div>
+                    <div class="buttonn"><button class="btn">Подробнее</button></div>
+                </div>
+                <img src="./pic/кот2.jpg" alt="">
+                <a class="next" onclick="nextSlide()"><ion-icon name="chevron-forward-outline"
+                        class="arrow"></ion-icon></a>
+            </div>
+
+        </div>
+
+        <div class="main-about-us">
+            <img class=chalk-icon src="/pic/chalk.png">
+            <div class="h1-about-us">
+                <h1>О нас </h1>
+                <h1 class="back-info-about-us">L=K(V+P)</h1>
+            </div>
+            <div class="cont-plus">
+                <div class=card-plus>
+                    <img src="pic/caretaker.png" alt="-_-">
+                    <p>Помогли найти более 500 животных.</p>
+                </div>
+                <div class=card-plus>
+                    <img src="pic/pet.png" alt="-_-">
+                    <p>Более трех лет способствуем возвращению питомцев к хозяевам.</p>
+                </div>
+                <div class=card-plus>
+                    <img src="pic/animals.png" alt="-_-">
+                    <p> Все услуги оказываются бесплатно.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-search-pet">
+            <h1>Найденные животные</h1>
+            <div class="cont-search-card">
+                <div class=search-card>
+                    <a href="#">
+                        <img src="https://cdn.pet911.ru/thumb_1717524884665f5994998e87.52074465_IMG_0879.webp">
+                        <p>Район</p>
+                        <p>Номер телефона</p>
+                        <p>Дата размещения</p>
+                        <p>Индикатор</p>
+                        <p>Кто разместил</p>
+                    </a>
+                </div>
+
+                <div class=search-card>
+                    <img src="https://cdn.pet911.ru/thumb_1717422956665dcb6c3cfff8.07457943_20230326_203122.webp">
+                    <p>Район</p>
+                    <p>Номер телефона</p>
+                    <p>Дата размещения</p>
+                    <p>Индикатор</p>
+                    <p>Кто разместил</p>
+                </div>
+
+                <div class=search-card>
+                    <img src="https://cdn.pet911.ru/thumb_1717382425665d2d19c95c37.40772613_1000000396.webp">
+                    <p>Район</p>
+                    <p>Номер телефона</p>
+                    <p>Дата размещения</p>
+                    <p>Индикатор</p>
+                    <p>Кто разместил</p>
+                </div>
+
+                <div class=search-card>
+                    <img
+                        src="https://cdn.pet911.ru/thumb_1717305290665bffca3bdaa7.17886258_96644845BF87451ABDE84469E21F43B7.webp">
+                    <p>Район</p>
+                    <p>Номер телефона</p>
+                    <p>Дата размещения</p>
+                    <p>Индикатор</p>
+                    <p>Кто разместил</p>
+                </div>
+
+                <div class=search-card>
+                    <img src="https://cdn.pet911.ru/thumb_1715425329663f50313512b9.24622919_IMG20240510WA0110.webp">
+                    <p>Район</p>
+                    <p>Номер телефона</p>
+                    <p>Дата размещения</p>
+                    <p>Индикатор</p>
+                    <p>Кто разместил</p>
+                </div>
+
+                <div class=search-card>
+                    <img src="https://cdn.pet911.ru/thumb_1715957957664770c5e0d104.03499058_photo_20240517_175110.webp">
+                    <p>Район</p>
+                    <p>Номер телефона</p>
+                    <p>Дата размещения</p>
+                    <p>Индикатор</p>
+                    <p>Кто разместил</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-form-search">
+            <h1>Форма поиска</h1>
+            <div class="cont-form-search">
+
+                <form class="search-form">
+                    <div class="line-search">
+                        <label>Район:</label>
+                        <input class="inp" type="text">
+                    </div>
+                    <br>
+                    <div class="line-search">
+                        <label>Вид:</label>
+                        <input class="inp" type="text">
+                    </div>
+                    <br>
+                    <div class="line-search">
+                        <label>Описание:</label>
+                        <input class="inp" type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <input class="button-search" type="submit">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="cont-footer">
+            <div class="contact">
+                <p>Телефон “8 (800)123-45-67”</p>
+                <p> e-mail: mail@newlife.ru</p>
+            </div>
+
+            <div class="nawigation">
+                <a href=#>Главная</a>
+                <a href=#>Регистрация</a>
+                <a href=#>Авторизация</a>
+                <a href=#>Личный кабинет</a>
+                <a href=#>Найдено животное</a>
+                <a href=#>Поиск</a>
+                <div>
+                </div>
+    </footer>
+
+    <script>
+        input = "javascript is awesome"
+        output = "";
+
+        for (i = 0; i < input.length; i++) {
+            if (i = a) {
+                i = 4;
+            }
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/script.js"></script>
+    <script>
+        alert = ('я juvaScript');
+    </script>
+</body>
+
+</html>
+
+<!-- https://helppet.ru/ 
+
+    https://pet911.ru/found-pets
+-->
