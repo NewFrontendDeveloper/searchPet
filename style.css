@@ -26,7 +26,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Babayka;
-    background-color: #9e2a2b
+    background-color: rgb(255, 195, 106);
+    min-height: 100vh;
 }
 
 header {
@@ -111,11 +112,11 @@ nav a:hover {
 /* Стилизация банера */
 
 .slider {
-    margin: 50px;
     padding: 50px;
     transition: 0.5s;
     border-radius: 5px;
     height: 100%;
+
 }
 
 .item {
@@ -146,6 +147,7 @@ nav a:hover {
     overflow: hidden;
     margin: 10px;
     padding: 0 5px 0 5px;
+    font-size: 24px;
     font-family: Cruinn-Regular;
 }
 
@@ -158,7 +160,7 @@ nav a:hover {
 
 .btn {
     padding: 10px;
-    background-color: chocolate;
+    background-color: rgb(255, 136, 0);
     color: aliceblue;
     border-radius: 5px;
     transition: 0.5s;
@@ -168,14 +170,14 @@ nav a:hover {
 }
 
 .btn:hover {
-    background-color: rgb(247, 149, 30);
+    background-color: rgb(255, 145, 20);
     transition: 0.5s;
 }
 
 .slider .item img {
     object-fit: cover;
-    width: 60%;
-    height: 500px;
+    width: 70%;
+    height: 600px;
 
 }
 
@@ -292,55 +294,123 @@ nav a:hover {
     font-size: 24px;
 }
 
-.main-search-pet {
+.main-cont-search-pet {
     display: flex;
     flex-direction: column;
-    margin: 70px 300px 70px 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 35px;
+    margin: 100px 200px 100px 200px;
+}
+
+.main-cont-search-pet h1 {
+    font-size: 46px;
     color: white;
 }
 
-.main-search-pet h1 {
-    font-size: 46px
-}
-
-.cont-search-card {
-    overflow-x: auto;
+.cont-search-pet .carusel-search-pet {
     display: grid;
     grid-auto-flow: column;
-    overscroll-behavior-inline: contain;
-    justify-content: space-between;
+    grid-auto-columns: calc((100%/3));
+    gap: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
-.cont-search-card::-webkit-scrollbar {
-    height: 15px;
+.cont-search-pet .arrow-search-pet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.24);
+    opacity: 1;
 }
 
-.cont-search-card::-webkit-scrollbar-track {
-    background-color: #fff3b0;
-    border-radius: 10px;
+.cont-search-pet .arrow-search-pet ion-icon {
+    width: 20px;
 }
 
-.cont-search-card::-webkit-scrollbar-thumb {
-    background-color: #e09f3e;
-    border-radius: 10px;
-    cursor: grab;
+.cont-search-pet .arrow-search-pet:first-child {
+    left: -42px;
 }
 
-.search-card {
-    margin: 0 20px 10px 20px;
-    border-radius: 5px;
-    width: 400px;
-    height: 500px;
-    -webkit-box-shadow: 0px 5px 18px -3px rgba(0, 0, 0, 0.44);
-    -moz-box-shadow: 0px 5px 18px -3px rgba(0, 0, 0, 0.44);
-    box-shadow: 0px 5px 18px -3px rgba(0, 0, 0, 0.44);
+.cont-search-pet .arrow-search-pet:last-child {
+    right: -42px;
 }
 
-.search-card img {
-    object-fit: cover;
-    border-radius: 5px;
+.cont-search-pet {
+    max-width: 1100px;
     width: 100%;
-    height: 250px;
+    position: relative;
+}
+
+.carusel-search-pet .card-search-pet {
+    list-style: none;
+    background-color: #F2F2ED;
+    border-radius: 8px;
+    height: 442px;
+}
+
+.carusel-search-pet.dragging {
+    scroll-behavior: auto;
+}
+
+.carusel-search-pet.dragging .card-search-pet {
+    cursor: grab;
+    user-select: none;
+}
+
+.card-search-pet img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+}
+
+.span-search-pet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 19px;
+    padding: 10px;
+}
+
+.span-search-pet span {
+    padding: 0 0 10px 0;
+}
+
+.adress {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.date-search-pet {
+    font-family: Cruinn-Regular;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+@media screen and (max-width: 1050px) {
+    .cont-search-pet .carusel-search-pet {
+        grid-auto-columns: calc((100%/2));
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cont-search-pet .carusel-search-pet {
+        grid-auto-columns: 100%;
+    }
 }
 
 .main-form-search {
@@ -408,7 +478,7 @@ nav a:hover {
     justify-content: space-around;
     align-items: center;
     font-size: 14pt;
-    background-color: #540b0e;
+    background-color: #b88436;
 }
 
 .contact {
